@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <!--
@@ -20,14 +21,14 @@
 ~/projects/0characterless.github.io &#62; cat links
 <div class="links">LINKS
 │
-├<a href="https://bsky.app/profile/0characterless.bsky.social">BLUESKY</a>
+├<a onmouseover="setCommand('bluesky -p 0characterless.bsky.social')" onmouseout="resetCommand()" href="https://bsky.app/profile/0characterless.bsky.social">BLUESKY</a>
 │└THIS IS WHERE I'M MOST ACTIVE
 │
-├<a href="https://www.instagram.com/0characterless/">INSTAGRAM</a>
+├<a onmouseover="setCommand('instagram profile 0characterless')" onmouseout="resetCommand()" href="https://www.instagram.com/0characterless/">INSTAGRAM</a>
 │└I DON'T POST BUT I DO REPOST AND COMMENT
 │
-└<a href="https://vrchat.com/home/user/usr_6827a0ff-c94f-4c9d-815c-eac82e016dc7">VRCHAT</a>
+└<a onmouseover="setCommand('vrchat -u0characterless connect')" onmouseout="resetCommand()" href="https://vrchat.com/home/user/usr_6827a0ff-c94f-4c9d-815c-eac82e016dc7">VRCHAT</a>
  └ADD ME IF YOU WANT TO PLAY SOMETIME</div>
-~/projects/0characterless.github.io &#62; <span class="cursor">&#32;</span>
+~/projects/0characterless.github.io &#62; <span id="command"></span><span class="cursor">&#32;</span>
   </body>
 </html>
