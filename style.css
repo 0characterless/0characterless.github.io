@@ -23,3 +23,11 @@ a{
 .links{
   white-space: pre;
 }
+.cursor{
+  animation: blinking 1.5s steps(1) infinite;
+}
+@keyframes blinking{
+  50%{
+    opacity: 0;
+  }
+}
