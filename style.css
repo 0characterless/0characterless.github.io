@@ -1,0 +1,25 @@
+@font-face{
+  font-family: MonaspaceKr;
+  src: url("fonts/MonaspaceKr.woff2");
+}
+
+*{
+  font-size: 1.1em;
+}
+
+body{
+  font-family: MonaspaceKr, Arial;
+  color: white;
+  background-color: black;
+}
+
+a{
+  color: white;
+}
+
+.ascii-art{
+  white-space: pre;
+}
+.links{
+  white-space: pre;
+}
