@@ -24,7 +24,9 @@ a{
   white-space: pre;
 }
 .cursor{
+  white-space: pre;
   animation: blinking 1.5s steps(1) infinite;
+  background-color: white;
 }
 @keyframes blinking{
   50%{
